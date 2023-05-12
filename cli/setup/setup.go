@@ -85,6 +85,7 @@ func InteractiveSetup(conf *util.ConfigType, stdin *bufio.Reader) {
 		askValue("LDAP mapping for username field", "uid", &conf.LdapMappings.UID, stdin)
 		askValue("LDAP mapping for full name field", "cn", &conf.LdapMappings.CN, stdin)
 		askValue("LDAP mapping for email field", "mail", &conf.LdapMappings.Mail, stdin)
+		askConfirmation("Enable LDAP debug", false, &conf.LdapDebug, stdin)
 	}
 }
 

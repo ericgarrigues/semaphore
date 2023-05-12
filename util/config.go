@@ -158,6 +158,7 @@ type ConfigType struct {
 	LdapSearchFilter string       `json:"ldap_searchfilter" env:"SEMAPHORE_LDAP_SEARCH_FILTER"`
 	LdapMappings     ldapMappings `json:"ldap_mappings"`
 	LdapNeedTLS      bool         `json:"ldap_needtls" env:"SEMAPHORE_LDAP_NEEDTLS"`
+	LdapDebug        bool         `json:"ldap_debug" env:"SEMAPHORE_LDAP_DEBUG"`
 
 	// telegram and slack alerting
 	TelegramAlert bool   `json:"telegram_alert" env:"SEMAPHORE_TELEGRAM_ALERT"`
